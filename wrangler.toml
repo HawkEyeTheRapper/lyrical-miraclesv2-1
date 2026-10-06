@@ -1,4 +1,5 @@
-name = 'lyrical-miraclesv2-1v2'
+# wrangler.toml
+name = "lyrical-miraclesv2-1v2"
 compatibility_date = "2024-01-01"
 
 [[d1_databases]]
