@@ -9,3 +9,42 @@ remote = true
 
 [ai]
 binding = "AI"
+
+[[d1_databases]]
+binding = "D1"
+database_id = "df89cfde-30b3-447e-8b8c-d2313926f7e7"
+
+[[d1_databases]]
+binding = "HAWKEYE-LYRICS"
+database_id = "90a295a0-2245-4349-9339-556f317f152e"
+
+[[d1_databases]]
+binding = "LYRICAL_DB"
+database_id = "df89cfde-30b3-447e-8b8c-d2313926f7e7"
+
+[[r2_buckets]]
+binding = "LYRICS"
+bucket_name = "lyrical-miracles"
+
+[[unsafe.bindings]]
+name = "MY_BINDING"
+type = "workflow"
+workflow_name = "workflows-gollum"
+script_name = "one-worker-to-bind-them"
+
+[[unsafe.bindings]]
+name = "Workers"
+type = "service"
+service = "lyrical-miracles-api"
+environment = "production"
+
+[[unsafe.bindings]]
+name = "WORKERS"
+type = "service"
+service = "lyrical-miracles-api"
+environment = "production"
+
+[[vectorize]]
+binding = "VECTORIZE_INDEX"
+index_name = "lyrical-miracles"
+# ...
